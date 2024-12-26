@@ -1,12 +1,15 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
+main {
+    margin-left: 1cm;
+}
 
 header {
-    background: #333;
+    background: #1b36ad;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -28,11 +31,11 @@ nav ul li a {
 }
 
 footer {
-    background: #333;
+    background:#1b36ad;
     color: #fff;
     text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
+    padding: 15px;
+    margin-top: 20px;
 }
 #enlace{
     text-decoration: none;
