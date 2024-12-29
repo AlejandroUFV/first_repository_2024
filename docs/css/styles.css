@@ -1,22 +1,63 @@
-body {
+
+body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-image: url("../imagenes/fondo_web.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-main {
-    margin-left: 1cm;
+
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 40px;
+    max-width: 750px;
+    width: 100%;
 }
-img {
-    width: 100%;   
-    height: auto;  
-    margin-left: 0;
-}
-header {
-    background: #1b36ad;
-    color: #fff;
-    padding: 1rem 0;
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+}
+
+.card-body img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+main {
+    flex: 1;
+    margin-left: 1cm;
+    margin-right: 1cm;
+    margin-bottom: 100px;
+}
+
+header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+nav{
+    padding-top: 10px;
 }
 
 nav ul {
@@ -34,21 +75,35 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul li a:hover {
+    color: #d27eea;
+}
+
 footer {
-    background:#1b36ad;
-    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
     text-align: center;
-    padding: 15px;
-    margin-top: 20px;
+    padding: 20px 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-#enlace{
+
+#enlace {
     text-decoration: none;
-    color:rgb(107, 27, 142);
+    color: rgb(107, 27, 142);
 }
-#Start{
+#Start {
     color: azure;
     text-decoration: none;
 }
+
+#Start:hover{
+    color: #d27eea;
+}
+
 table {
     border-collapse: collapse;
     width: 60%;
@@ -59,7 +114,7 @@ table {
 }
 
 thead {
-    background-color: #2f12cf;
+    background-color: #8942eb;
     color: white;
     text-align: left;
 }
@@ -78,6 +133,7 @@ tbody tr:nth-child(even) {
 }
 
 tbody tr:hover {
-    background-color: #6c1ed8;
+    background-color: #ba85e3;
     cursor: pointer;
+    color: white;
 }
