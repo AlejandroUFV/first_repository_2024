@@ -1,4 +1,4 @@
-# My first repsoitory
+# My first repository
 
 This is the repository for the activity 1.
 
