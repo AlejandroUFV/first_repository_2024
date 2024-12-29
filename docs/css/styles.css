@@ -7,7 +7,11 @@ body {
 main {
     margin-left: 1cm;
 }
-
+img {
+    width: 100%;   
+    height: auto;  
+    margin-left: 0;
+}
 header {
     background: #1b36ad;
     color: #fff;
@@ -55,7 +59,7 @@ table {
 }
 
 thead {
-    background-color: #e18b1a;
+    background-color: #2f12cf;
     color: white;
     text-align: left;
 }
@@ -74,6 +78,6 @@ tbody tr:nth-child(even) {
 }
 
 tbody tr:hover {
-    background-color: #f38314;
+    background-color: #6c1ed8;
     cursor: pointer;
 }
