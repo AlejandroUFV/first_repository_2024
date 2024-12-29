@@ -4,23 +4,222 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tema</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Es un enlace para una biblioteca de css-->
+    <link rel="stylesheet" href="../css/topic_style.css">
 </head>
 <body>
     <header>
-        <h1>Voley</h1>
+        <h1>Voley: información y reglas</h1>
         <nav>
             <a href="../index.html" id="Start">Inicio</a>
         </nav>
     </header>
-    <main>
+    <main style="margin-top: 30px;">
         <section>
-            <h2>Voley</h2>
-            <p>[Información completa sobre tu tema elegido]</p>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="reglas-tab" data-bs-toggle="tab" href="#reglas" role="tab" aria-controls="reglas" aria-selected="true">Reglas</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="posiciones-tab" data-bs-toggle="tab" href="#posiciones" role="tab" aria-controls="posiciones" aria-selected="false">Posiciones</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="rotacion-tab" data-bs-toggle="tab" href="#rotacion" role="tab" aria-controls="contact" aria-selected="false">Rotaciones</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="reglas" role="tabpanel" aria-labelledby="reglas-tab">
+                    <div class="container mt-4">
+                        <div class="row g-3">
+                            <div class="col-12 col-md-4">
+                                <div class="card" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">1. Composición del equipo</h5>
+                                        <p class="card-text">Cada equipo tiene 6 jugadores en la cancha (3 en la zona delantera y 3 en la zona trasera).
+                                            Hay jugadores de reserva en el banco que pueden entrar como cambios.
+                                            El líbero tiene reglas especiales:
+                                            Solo puede jugar en la línea de atrás.
+                                            No puede sacar, bloquear ni intentar bloquear.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">2. Inicio del juego</h5>
+                                        <p class="card-text">El juego comienza con un saque desde detrás de la línea de fondo.
+                                            El saque se realiza lanzando el balón y golpeándolo para enviarlo al campo contrario.
+                                            El equipo receptor debe devolver el balón con un máximo de tres toques (sin contar un posible toque de bloqueo).</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">3. Objetivo del juego</h5>
+                                        <p class="card-text">El objetivo es hacer que el balón toque el suelo en el campo contrario o provocar un error del otro equipo.
+                                            Cada vez que el balón toca el suelo o el rival comete una infracción, el equipo contrario gana un punto (rally point system).</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">4. Toques permitidos</h5>
+                                        <p class="card-text">Cada equipo tiene un máximo de tres toques para devolver el balón al campo contrario:
+                                            Primer toque: Normalmente es de recepción (puede ser con los brazos o manos).
+                                            Segundo toque: Generalmente es el armado.
+                                            Tercer toque: Suele ser un remate o envío al otro lado.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5. Rotaciones</h5>
+                                        <p class="card-text">Cuando un equipo gana el derecho a sacar (por ganar un punto tras el saque del rival), los jugadores rotan en sentido horario.
+                                            El jugador que estaba en la posición delantera derecha se mueve al saque, y así sucesivamente.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">6. Red y áreas de juego</h5>
+                                        <p class="card-text">La red mide 2.43 m de altura para hombres y 2.24 m para mujeres.
+                                            El campo mide 18 metros de largo y 9 metros de ancho, dividido en dos mitades de 9x9 metros.
+                                            La línea de ataque está a 3 metros de la red; los jugadores traseros no pueden atacar más allá de esta línea.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="posiciones" role="tabpanel" aria-labelledby="posiciones-tab">
+                    <div class="container mt-4">
+                        <div class="row g-3">
+                            <div class="col-12 col-md-4">
+                                <div class="card" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">1. Armador</h5>
+                                        <p class="card-text">Posición: Normalmente juega en la posición 2 (frontal derecha) o en la 1 (trasera derecha).
+                                            Rol:
+                                            Es el cerebro del equipo, encargado de organizar el juego.
+                                            Su principal tarea es recibir el segundo toque y colocar el balón para que un atacante pueda rematar.
+                                            Debe tener excelente visión del juego, comunicación y precisión.
+                                            Características clave: Habilidad técnica, toma rápida de decisiones y liderazgo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">2. Opuesto</h5>
+                                        <p class="card-text">Posición: Juega en la posición 1 (trasera derecha) o 2 (frontal derecha), opuesta al armador.
+                                            Rol:
+                                            Principal atacante del equipo.
+                                            Encargado de rematar desde el lado derecho y cubrir en defensa desde la línea de atrás.
+                                            Frecuentemente es quien realiza los ataques más fuertes y decisivos.
+                                            Características clave: Potencia en el ataque, buen bloqueo y versatilidad.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">3. Atacantes de esquina</h5>
+                                        <p class="card-text">Posición: Juegan en la posición 4 (frontal izquierda) y también atacan desde la posición 6 (trasera central).
+                                            Rol:
+                                            Son los atacantes más versátiles, responsables de rematar balones desde la izquierda y participar en la recepción del saque.
+                                            También deben apoyar en defensa cuando están en la línea trasera.
+                                            Características clave: Buen equilibrio entre ataque y defensa, además de resistencia física.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">4. Centrales</h5>
+                                        <p class="card-text">Posición: Juegan en la posición 3 (frontal central).
+                                            Rol:
+                                            Son los especialistas en bloqueo. Deben bloquear los ataques del equipo contrario en la red.
+                                            También son atacantes rápidos, aprovechando los balones cerca de la red (ataques rápidos o "short sets").
+                                            Características clave: Altura, rapidez y buen tiempo de reacción para bloquear.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5. Líbero</h5>
+                                        <p class="card-text">Posición: Juega exclusivamente en la línea trasera (posiciones 5, 6 o 1).
+                                            Rol:
+                                            Especialista en defensa y recepción de saque.
+                                            No puede atacar ni bloquear, y su principal tarea es recibir balones difíciles y mantener la jugada viva.
+                                            Usa un uniforme de color diferente para distinguirse del resto del equipo.
+                                            Características clave: Habilidad defensiva, agilidad y reflejos rápidos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">6. Saque</h5>
+                                        <p class="card-text">Posición: El saque se realiza desde detrás de la línea de fondo en cualquier punto de la zona de servicio.
+                                            Rol:
+                                            Es el jugador que pone el balón en juego.
+                                            El saque puede ser estratégico (buscar debilidades en la recepción) o fuerte para dificultar al oponente.
+                                            Características clave: Precisión y potencia en el saque.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="rotacion" role="tabpanel" aria-labelledby="rotacion-tab">
+                    <div class="container mt-4">
+                        <div class="row g-3">
+                            <div class="col-12 col-md-4">
+                                <div class="card" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Posiciones</h5>
+                                        <p class="card-text">Cada vez que un equipo gana el derecho a sacar, los jugadores rotan en el sentido de las agujas del reloj.
+                                            Esto asegura que todos los jugadores pasen por todas las posiciones en el campo, incluidas las delanteras y traseras.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Línea delantera</h5>
+                                        <p class="card-text">Línea delantera:<br>
+
+                                            Posición 4: Ataque por la izquierda (Outside Hitter).<br>
+                                            Posición 3: Central (Middle Blocker).<br>
+                                            Posición 2: Armador o opuesto.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Línea trasera</h5>
+                                        <p class="card-text">Posición 5: Defensa por la izquierda.<br>
+                                            Posición 6: Defensa central (líbero o backcourt).<br>
+                                            Posición 1: Defensa derecha (Armador u opuesto).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Alejandro</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

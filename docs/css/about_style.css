@@ -1,0 +1,87 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: url("../imagenes/fondo_web.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+nav {
+    padding-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: #d27eea;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.card {
+    background: rgba(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.accordion {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    width: 100%;
+    position: relative;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+#enlace {
+    text-decoration: none;
+    color: rgb(27, 73, 142);
+}
+
+#enlace:hover {
+    color: #d27eea;
+}
+
+#Start {
+    color: azure;
+    text-decoration: none;
+}
+
+#Start:hover{
+    color: #d27eea;
+}
