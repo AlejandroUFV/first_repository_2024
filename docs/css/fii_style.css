@@ -1,0 +1,114 @@
+
+header {
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Fondo opaco */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    box-sizing: border-box;
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+}
+
+main {
+    margin-top: 80px; /* Deja espacio para el header fijo */
+    padding: 20px;
+}
+
+body {
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("../imagenes/fondo_web.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+
+#enlace {
+    text-decoration: none;
+    color: rgb(107, 27, 142);
+}
+#Start {
+    color: azure;
+    text-decoration: none;
+}
+
+
+nav{
+    padding-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #d27eea;
+}
+
+#Start:hover{
+    color: #d27eea;
+}
+
+footer {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #8942eb;
+    color: white;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eef;
+}
+
+tbody tr:hover {
+    background-color: #ba85e3;
+    cursor: pointer;
+    color: white;
+}
+
+
+
